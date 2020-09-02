@@ -22,6 +22,7 @@
     
     <!-- HEADER MENU -->
     <header id="header">
+         <!-- LEFt MENU -->
         <div class="header__inner">
             <div class="header__left-part">
                 <div class="header__logo">
@@ -39,12 +40,12 @@
             <!-- TOP MENU -->
             <div class="header__middle-part header-menu">
                 <ul class="header-menu__items-list">    
-                    <li class="header-menu__item header-menu__item--dropdown">
+                    <li class="header-menu__item">
                         <a class="header-menu__item-link header-menu__item_link--dropdown" href="#">
                             О комплексе
                         </a>    
                     </li>
-                    <li class="header-menu__item header-menu__item--dropdown">
+                    <li class="header-menu__item">
                         <a class="header-menu__item-link header-menu__item_link--dropdown" href="#">
                             Особенности
                         </a>
@@ -62,7 +63,7 @@
                 </ul>
             </div>
 
-            <!-- CALLBACK RIGHT -->
+            <!-- HEADER RIGHT -->
             <div class="header__right-part">
                 <div class="phone-block">
                     <span class="phone-block__text">8 888 888 88 88</span>
@@ -84,38 +85,51 @@
             <!-- NAV -->
             <div class="left-menu">
                 <nav>
-                    <div class="left-menu__title">
-                        <h2>АРХИТЕКТУРА</h2>
-                    </div>
                     <div class="left-menu__sections">
                         <ul>
-                            <li>Благоустройство</li>
-                            <li>Безопасность</li>
-                            <li>Инженерия</li>
-                            <li>Инфраструктура</li>
-                            <li>Транспортная доступность</li>
+                            <li class="active" data-order="1">
+                                <span> Архитектура</span>
+                                <span class="underline"></span>
+                            </li>
+                            <li data-order="2">
+                                <span> Благоустройство</span>
+                                <span class="underline"></span>
+                            </li>
+                            <li data-order="3">
+                                <span> Безопасность</span>
+                                <span class="underline"></span>
+                            </li>
+                            <li data-order="4">
+                                <span> Инженерия</span>
+                                <span class="underline"></span>
+                            </li>
+                            <li data-order="5">
+                                <span> Инфраструктура</span>
+                                <span class="underline"></span>
+                            </li>
+                            <li data-order="6">
+                                <span> Транспортная доступность</span>
+                                <span class="underline"></span>
+                            </li>
                         </ul>
                     </div>
                 
                 
                 </nav>
             </div>
-        <!-- BANNER SECTION  -->
+            <!-- BANNER SECTION  -->
         
             <div class="banner-section">
                 <div class="banner-section__left-part">
                     <div class="banner-section__title-text">
                         <h1>Архитектура</h1>
                     </div>
-                    <div class="banner-section__subtitle-text">
-                        <p>
-                            Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни
-                        </p>
-                        
+                    <div class="banner-section__subtitle-text hidden">
+                        <span>Оригинальная архитектура архитектура архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизниОригинальная архитектура архитектура архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни</span>
                     </div>
                     <div class="counter-wrapper">
                         <span class="counter__current">1</span>
-                        <span class="counter__deivide"> / </span>
+                        <span class="counter__divider"> / </span>
                         <span class="counter__all">6</span>
                     </div>
                 </div>
@@ -126,29 +140,22 @@
                 </div>
             </div>
         </div>
+    </div>
         
     <!-- FOOTER -->
-    <footer id="footer"> 
-        <div class="max-width">
-            
-        
-        
-            <div class="footer__bottom">
-                <div class="copy pull-left">
-                    <span>Разработано в MST</span>
-                </div>
-                <div class="text-divider">
-                    |      
-                </div>
-                <div class="date">
-                    <span>2018</span>
-                </div>   
-            </div>
-        </div>         
+    <footer id="footer">         
+        <div class="footer__bottom">
+            <span>Разработано в MST</span>
+            <span class="text-divider">
+                |      
+            </span>
+            <span class="date">2018</span>  
+        </div> 
     </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/js/mobile.js"></script>
+    <script src="/js/script.js"></script>
     
   </body>
 </html>
