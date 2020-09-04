@@ -1,7 +1,7 @@
 # MST_TestTask
 Тестовое задание компании MST
 
-Демо https://vladislav747.github.io/MIT_TASK
+Демо https://vladislav747.github.io/MST_TestTask/
 
 # Figma макет
 
