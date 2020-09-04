@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Тестовое задание компании MST",
   "main": "index.js",
-  "homepage": "https://github.com/Vladislav747/MST_TestTask#readme",
+  "homepage": "https://vladislav747.github.io/MIT_TASK",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "cd gulp && npx gulp deploy"
