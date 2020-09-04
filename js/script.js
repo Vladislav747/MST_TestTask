@@ -2,12 +2,7 @@ $(document).ready(function () {
     
     //Обрезать текст
     function minimizeText(lengthStr) {
-        console.log(
-            $(".active .banner-section__subtitle-text span").text().length,
-            "Длина" );
-        if (
-            $(".active .banner-section__subtitle-text span").text().length > lengthStr
-        ) {
+        if ($(".active .banner-section__subtitle-text span").text().length > lengthStr && $(".active .banner-section__subtitle-text").has(".link-detail-element").length < 1) {
             var originalText = $(".active .banner-section__subtitle-text span").text();
             console.log(originalText, 'originalText');
             var newText = originalText.substr(0, lengthStr);
@@ -37,6 +32,7 @@ $(document).ready(function () {
         var number = $(this).attr("data-order");
         $(".counter-wrapper .counter__current").text(number);
         carouselBanners(true, number);
+        minimizeText(150);
     });
     
 
