@@ -6,7 +6,8 @@
   "homepage": "https://Vladislav747.github.io/MIT_TASK",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "cd gulp && npx gulp deploy"
+    "deploy": "cd gulp && npx gulp deploy",
+    "build": "cd gulp && npx gulp"
   },
   "repository": {
     "type": "git",
@@ -27,12 +28,13 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-file-include": "^2.1.1",
     "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-replace-image-src": "^1.0.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^9.0.0"
   }

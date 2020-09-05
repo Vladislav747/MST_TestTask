@@ -6,7 +6,8 @@ cssmin     = require('gulp-clean-css'),
 uglify       = require('gulp-uglify'),
 fileinclude = require('gulp-file-include'),
 imagemin     = require('gulp-imagemin'),
-pngquant     = require('imagemin-pngquant'),
+pngquant = require('imagemin-pngquant'),
+rep = require('gulp-replace-image-src'),
 gcmq = require('gulp-group-css-media-queries');
 
 const ghPages = require('gh-pages'),
@@ -50,9 +51,16 @@ gulp.task('fonts_build', function (done) {
 gulp.task('img', function() {
     return gulp.src('../assets/banner_img/*')
     .pipe(gulp.dest('build/img/'))
-    .pipe(browserSync.stream());
-    done();
-  });
+    .pipe(browserSync.stream()).done();
+});
+
+gulp.task('replace', function() {
+    return gulp.src('../assets/banner_img/*')
+    .pipe(gulp.dest('build/img/'))
+    .pipe(browserSync.stream()).done();
+});
+  
+
 
 gulp.task('webServer', function(done) {
     browserSync.init({
@@ -65,7 +73,7 @@ gulp.task('webServer', function(done) {
     done();
 });
 
-gulp.task('default', gulp.series('html_build', 'img', 'css_build', 'js_build', 'fonts_build', 'webServer'));
+gulp.task('default', gulp.series('html_build', 'img',  'replace', 'css_build', 'js_build', 'fonts_build', 'webServer'));
 
 function deploy(cb) {
     ghPages.publish(path.join(process.cwd(), './build'), cb);
